@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#10071f">
+  <title>For My Princess Bubu 💜</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background-glow"></div>
+  <div class="stars" id="stars"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <audio id="music" src="music.mp3" loop preload="auto"></audio>
+
+  <button class="music-btn" id="musicBtn" aria-label="Play music">♫</button>
+
+  <div class="music-label" id="musicLabel">Romantic music</div>
+
+  <main>
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+      <div class="ornament">✧ ♛ ✧</div>
+      <p class="eyebrow">A MAGICAL SURPRISE FOR SOMEONE SPECIAL</p>
+
+      <h1 class="script-title">For My Princess</h1>
+      <h2 class="gold-title">BUBU</h2>
+
+      <div class="hero-glass glass-card">
+        <div class="hero-crown">👑</div>
+        <p>Some people make the world beautiful just by being in it.</p>
+        <p class="highlight">And for me, that person is you.</p>
+      </div>
+
+      <div class="royal-divider">✦ ❖ ✦</div>
+
+      <button class="gold-btn" onclick="nextPage(2)">
+        Enter Your Kingdom <span>✧</span>
+      </button>
+
+      <p class="tiny-note">A little world created only for you 💜</p>
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+      <p class="eyebrow">A ROYAL ANNOUNCEMENT</p>
+      <h1 class="script-title">Hear Ye, Hear Ye!</h1>
+
+      <div class="glass-card announcement-card">
+        <div class="royal-icon">👑</div>
+        <p class="eyebrow">OFFICIAL ROYAL DECREE</p>
+
+        <h2 class="gold-title">The Princess of My World</h2>
+
+        <p>By the sweetest decree of this little kingdom, today is dedicated to one extraordinary girl.</p>
+
+        <p class="highlight">Her name is Bubu. 💜</p>
+
+        <p>Her smile is magic, her heart is precious, and she deserves all the happiness in the world.</p>
+
+        <div class="royal-divider">✦ ♡ ✦</div>
+      </div>
+
+      <button class="gold-btn" onclick="nextPage(3)">Continue, Princess ✨</button>
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+      <p class="eyebrow">A LETTER FROM MY HEART</p>
+      <h1 class="script-title">Dear Bubu...</h1>
+
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope" onclick="openLetter()">
+          <div class="envelope-back"></div>
+
+          <div class="letter">
+            <div class="letter-content">
+              <span class="letter-heart">💜</span>
+              <h3>My Dearest Bubu,</h3>
+
+              <p>You make ordinary moments feel special. Even the simplest conversations become memories I want to keep.</p>
+
+              <p>I hope you always remember how precious you are and how much happiness you bring into my world.</p>
+
+              <p>Today, I just want to celebrate you, your beautiful heart, and the wonderful person you are.</p>
+
+              <p class="signature">With love, always ♡</p>
+            </div>
+          </div>
+
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="seal">♥</div>
+        </div>
+      </div>
+
+      <p class="tap-hint" id="tapHint">Tap the envelope to open your letter</p>
+
+      <button class="gold-btn hidden" id="letterNext" onclick="nextPage(4)">
+        Continue 💌
+      </button>
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+      <p class="eyebrow">FIVE LITTLE REASONS</p>
+      <h1 class="script-title">Why You're Special</h1>
+
+      <div class="reason-list">
+
+        <div class="reason glass-card">
+          <span>01</span>
+          <p>Your smile can make an ordinary day brighter.</p>
+          <b>✧</b>
+        </div>
+
+        <div class="reason glass-card">
+          <span>02</span>
+          <p>Your heart makes you beautifully unique.</p>
+          <b>♡</b>
+        </div>
+
+        <div class="reason glass-card">
+          <span>03</span>
+          <p>Your presence makes moments memorable.</p>
+          <b>✧</b>
+        </div>
+
+        <div class="reason glass-card">
+          <span>04</span>
+          <p>You have your own wonderful kind of magic.</p>
+          <b>♡</b>
+        </div>
+
+        <div class="reason glass-card">
+          <span>05</span>
+          <p>Simply because you are YOU, Bubu.</p>
+          <b>♛</b>
+        </div>
+
+      </div>
+
+      <button class="gold-btn" onclick="nextPage(5)">One More Thing 💜</button>
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page" id="page5">
+      <p class="eyebrow">A LITTLE PROMISE</p>
+      <h1 class="script-title">My Promise to You</h1>
+
+      <div class="glass-card promise-card">
+        <div class="big-heart">♡</div>
+
+        <p>I promise to keep choosing kindness, honesty, patience, and understanding.</p>
+
+        <p>To celebrate your happiness, respect your dreams, listen to your thoughts, and keep creating beautiful memories together.</p>
+
+        <p class="highlight">You deserve love that feels safe, genuine, and peaceful.</p>
+
+        <div class="royal-divider">✦ ❖ ✦</div>
+
+        <p class="signature">Forever wishing you the best, Bubu.</p>
+      </div>
+
+      <button class="gold-btn" onclick="nextPage(6)">The Grand Finale ✨</button>
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page" id="page6">
+      <div class="final-crown">♛</div>
+
+      <p class="eyebrow">THE KINGDOM CELEBRATES YOU</p>
+
+      <h1 class="script-title">Happy Princess Day</h1>
+      <h2 class="gold-title final-name">BUBU</h2>
+
+      <div class="glass-card final-card">
+        <p>May your days be filled with laughter, your dreams with possibilities, and your heart with endless happiness.</p>
+
+        <p>Never forget how special you are.</p>
+
+        <div class="royal-divider">✦ ♡ ✦</div>
+
+        <p class="signature">With all my love ♡</p>
+      </div>
+
+      <button class="gold-btn" onclick="celebrateAgain()">Celebrate Again 🎆</button>
+
+      <button class="text-btn" onclick="nextPage(1)">Replay the Surprise ↻</button>
+    </section>
+
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
